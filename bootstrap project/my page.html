@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Your custom CSS styles */
+        body {
+            background-color:  #3B2A9F;
+; /* Set the background color for the entire page */
+        }
+        header, .container {
+            background-color: #3B2A9F !important; /* Set the background color for the header and container */
+        }
+        .btn-danger {
+            background-color: orange; /* Change the color of the light button */
+            border-color: orange;
+        }
+
+        h3#name {
+            color: orange;
+        }
+
+        .psh {
+            max-width: 100%; /* Adjust as needed */
+            height: auto;
+        }
+
+        .proved {
+            margin-left: 100px;
+            padding: 20px; /* Add some padding for better spacing */
+        }
+
+        .oval-button {
+            border-radius: 25px; /* sets the border radius to create an oval shape */
+            padding: 10px 20px; /* adjust padding as needed */
+            background-color: orangered;
+            color: white;
+            border: none; /* Remove default button border */
+            cursor: pointer; /* Add pointer cursor to button */
+        }
+
+        .custom-image {
+    margin-top: -50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+        .image-container img {
+      border-radius: 8px;
+      margin-left: 45px;
+      margin-top: 45px;
+      width: 250px;
+      height: 250px;}
+
+
+        .white-text {
+    color: white;
+        }
+
+
+        .font-size-35 {
+    font-size: 30px;
+}
+
+.class1 {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .class1 {
+        margin-left: 90px;
+    }
+}
+
+        @media (min-width: 768px) {
+    #imgsm {
+        margin-top: 50px;
+        margin-left: 350px;
+    }
+
+    .class2 {
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+        .class4{
+    margin-top: 50px;
+}
+
+.class5{
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #111109;
+}
+
+.class5 p, .class5 h3 {
+    margin-left: 35px;
+}
+
+.con{
+    width: 120px;
+    height: 38px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration:none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ .footer {
+            background-color: black;
+            color: #fefefe;
+            padding-bottom: 5px;
+            margin-right: 150px;
+            margin-top: 200px;
+            padding-left: 70px;
+            padding-top: 50px;
+            width: 110%;
+        }
+
+        .footer .heading {
+            color: #fefefe;
+            max-width: 1010px;
+            width: 90%;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+
+        .footer .content {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1.5rem;
+        }
+
+        .footer .content p {
+            margin-bottom: 1.3rem;
+        }
+
+        .footer .content a {
+            text-decoration: none;
+            color: #fefefe;
+        }
+
+        .footer .content a:hover {
+            border-bottom: 1px solid #971717;
+        }
+
+        .footer .content h4 {
+            margin-bottom: 1.3rem;
+            font-size: 19px;
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /*footer hr {*/
+        /*    margin: 2rem 0;*/
+        /*}*/
+
+
+         hr { background-color: white;
+
+         }
+
+         .fclass{
+             padding-right: 70px;
+         }
+
+         .text-white {
+    color: white; /* Set text color to white */
+}
+
+
+         .social-icons {
+    display: flex;
+    flex-direction: row; /* Ensure icons are displayed horizontally */
+    justify-content: flex-start; /* Align icons to the start of the container */
+    align-items: center; /* Center the icons vertically */
+}
+
+.social-icons i {
+    font-size: 20px; /* Adjust icon size */
+    margin-right: 10px; /* Add space between icons */
+    color: white;
+    padding-top: 135px;
+}
+
+
+
+    </style>
+</head>
+<body style="width: 1438.77px; max-width: 100%;>
+    <header class="bg-primary text-white">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <h1 class="m-0" style="color: white;">Logo</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Games</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">News</a></li>
+                    <li class="nav-item"><button class="btn btn-danger">Light</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <div class="container proved">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 id="name">
+                        Proved by Rojin
+                    </h3>
+                    <h1 class="text-white">
+                        Work that we
+                        <br> produce for our <br> clients
+                    </h1>
+                    <p>
+                        <span class="text-light">Lorem Ipsum is simply dummy text of the printing and <br>
+        typesetting industry. Lorem Ipsum has been the industry's <br>
+        standard.</span>
+                  <div>
+        <button class="oval-button">Get more details</button>
+                    </div>
+                    </p>
+                </div>
+                <div class="col-md-6">
+    <img src="https://s3-alpha-sig.figma.com/img/1fdc/32b6/4aed1bc4524c8c056b1d97bb57a48953?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ERdF9uVALFfa9cxMy0DIssMH0euEFVv3HB18xEKY-Bm22VgQKQlsjs7s28eTxkzcMHbn-xDh02fGlDhsEG1bGa~PUalFxwnMPY-bkm16lOE~Wl9UfJB-i7IoROCfJK5xAT~Iqzf-w47nRLkm3VPC7y3dgWtzab4JwM9Y2Ug~QolpygaTD7UfYZWpmgikkqLXfvDr8OjCiXTbwIpqmiMYO1BAWl5LkWSDxqWi61qeVSPPvPwMqtaJfBmmrMXG~jGMIkeBBfuiT9XaJdsJ0YgDP4JlsHZoru6D3FbRdrxhSGgDTOfnCnaH~Lyxg4bQPdxRWMobKESUyFpDzN8oGN9u-w__"
+        class="img-fluid psh custom-image" alt="Proved Image">
+</div>
+            </div>
+        </div>
+    </main>
+
+    </main>
+
+
+
+
+<div class="container">
+    <section class="s1 d-flex justify-content-between align-items-center">
+        <h2 class="text-light mb-0">Currently Trending Games</h2>
+        <button id="b2" class="btn btn-primary">See All</button>
+    </section>
+
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="rounded">
+                <img src="https://s3-alpha-sig.figma.com/img/4158/33dd/56905d8aead565a99461edee86e24d27?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QBPOgjt0B~u5WeMkQZ~iYaCLDyMG-aI9yl5izKsJMylE1u169-T6NZibKnIR80-jGnZlrPLyto17isl1iIze1CCbmJAR3wAMLy3xyoWVTAAxxibFHwWYC9WH5uE2Ceyg-90eduHNYuMktB13mg1eaPziyXDpBDmzJXlNs0GZXWywhcEveLVL3g9b0~YJD-vcNQWtJw0kF9ROw4zg7rzMIbHYBXw1WC56U05GUxpsQ6jAtnCpKo-URWvWxwmBnBKJ~~G0ROJ~m~AGkb61cuD7rOVl0q6~xtPZmUlsS8sjucMGFb0BAXo~qrfLYpM4BXRCFEdalVv1BRAHKqwfjyArAw__" class="img-fluid rounded" alt="Game Image">
+            </div>
+            <p class="mt-2 text-center white-text"><i class="fa fa-fire"></i> 40 followers </p>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded">
+                <img src="https://s3-alpha-sig.figma.com/img/9785/b4d2/2632d80603fc629f3a90af2f71e77160?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q6bOVEOnUCjvw3AL6F8rp8mB6CwX4bz2lHJC9QZANkxJSus-H07xSa4aA8iKA4UTCGytnN0TyyA9YN6aSUbqTt4YUeWP58f3VVxqfXzEjQOku8tJgj1rdo1v~8XyXGoOsxicGQkE7MiDodThcz1lBaKN411sSi1In9GpkndB9gpWbrMmpZFxdMUgTDFRDqbmDF0B1UdVe4KweidN4diXLe5iTUfcHjIjc-ryacQxT8VDuBOOAX3POsHs4u2zllHNLzHx00um4PQpm6hFGedVgH-1lPRxpU~VfI~BMeHxel3igpMx0JqtPBmP3lX0GFUbXp9~fV8GZR0pirA4VoJMKw__" class="img-fluid rounded" alt="Game Image">
+            </div>
+            <p class="mt-2 text-center white-text"><i class="fas fa-fire"></i> 40 followers </p>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded">
+                <img src="https://s3-alpha-sig.figma.com/img/5fdf/8129/067aa0e4760746af800ca04d242d4981?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jrf8ajTl6y9CLPu1zsKPc9hZipoTfjdZdT62uuAh4q4aL6dYt0x485z0JOKH45~~pNhbm4RMisRW6dIa3HvTFtqO9ZO-ETbz2-UFl6x653Y3fitvqlok4jtU38ysZDC7anbFcSgVLjbb~qgy6qg-BqPzjku4eirco7A9PSiECMkacT-aYOgIYZ~nga7Yj5B0k3u089T7Zxgai~4U~xSy3RYBvs3QYJQDLaihcNP-WMLC-iNmk5M0rZIv8LV4jyjaW-n2~oZfFCpdtBi-rHKaYmmauGCOVI1Oiy4esU5mkP9aJ3Pug-irSp-N6JOadvoM-Frm2OtvAoq7xA5UUQMfBg__" class="img-fluid rounded" alt="Game Image">
+            </div>
+            <p class="mt-2 text-center white-text"><i class="fas fa-fire"></i> 40 followers </p>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded">
+                <img src="https://s3-alpha-sig.figma.com/img/7eb2/9e61/6d5e0990a67102e0ba74574d569aa036?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FeqvYAKtVvSLSX2sEIZ5HjMq3nGatGsbarqSRXmtJBwyk1TPk6qEyKfUBN1Eg7iSV-HM~~qMvJj8ZT1rBTnDR0SmDc~AK3TUmdmYkqX8jLoHCSM8~h9jB-eaUaq~jNOH2a2g~W0AbZ-NkJ3D39~844KIIoZYwzunirBWO3vsHiOO8VORFKtNE-oEPg6tvpqD46D8wlLIV7-IR6gPqvGxn3dXn3Ees81bncWQSTjk1p4bo4oBz1fqHlnF4v9gbpl4IGBUi5P0qFZZ6iApN4qg9BkjGXXK-MX8pci~BVU3FWUaU2khbcy1SaXjPMXCMrp1oUO0-acWcLQz1L7Pzv~Wwg__" class="img-fluid rounded" alt="Game Image">
+            </div>
+            <p class="mt-2 text-center white-text"><i class="fas fa-fire"></i> 40 followers </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container1">
+    <div class="row">
+        <div class="col-md-12 text-center text-white mt-5">
+            <p id="id1" class="font-size-35">
+                Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-8 offset-md-2">
+            <div class="class1">
+                <h2 id class="text-white">Lorem Ipsum</h2>
+                <p id class="text-justify text-white">
+                    is simply dummy text of the printing and typesetting <br>industry.
+                    Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s,
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container2">
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center mt-5">
+            <img src="https://s3-alpha-sig.figma.com/img/494d/6296/bda8f371503fa58f7e526fe7b0cd55c9?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K3FRjyhBDDWdRC9DqlG3mE-DyTkui4oPMIeZeb1qLIfYXIjkrkzWbKm4pjSKbyyjobJKRw4qBjMeP-UoQrrdNhn8V0JhFpQLYqQP5l0FxeraWwiQv4t7x8QJ3OvI~02XGVmVOUjHwtOESYQEP0nwp0YoZYlJBPnFqQzn~bmHkP5FigFYQmjfH0Pn2jgmtLfPj8YtJr5OxSgZ8UCc6EyTawdIbfdlxm1wgnsTvHnQ~STfOGw50pbY7X6LrVTh2KYjIl6RXEFQ7KjiBzxmeBnOUKE0acdYCg~Lf9eCl9ZaGJuM04aSXkDD34xdUyRe2Hjd1DyzSOzCP3YhhtLCnzWZJg__" id="imgsm" class="img-fluid rounded" style="width: 950px; height: 300px; top: 1898px; left: 147px; gap: 0px; border-radius: 5px 0px 0px 0px; opacity: 0px; margin: auto;">
+        </div>
+    </div>
+</div>
+
+
+    <div class="row mt-5">
+        <div class="col-md-8 offset-md-2">
+            <div class="class2">
+                <h3 class="text-white">Our Recent Projects</h3>
+                <p class="text-center text-white">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="class3 d-flex flex-wrap justify-content-center">
+                <img src="https://s3-alpha-sig.figma.com/img/9a79/4f22/40fa4d142038d6aa657990166938303b?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j3srjnFHm80bED3YA0xB7AAEeI6VgOBrsfCqT7kwtAyd3weyYx9syw4PQzyypH0dasfVKXos~LHTAiXXOTPXDFJXzE~qSWmeczT9900tmzN9CqYEbno4Cncp-4J-eZOjWZsmj9uc4OPMi-4ssBDwxF5Ub5ZdOa6Jy-h7T8rUUqoR2axAzC-qxR~bLPrx-KZX8tFEVioEB0MjCSu2odkZ8PAQ0q2jbzY4xAX2F41axxflydBwh~6fctW~fTX4et8wXFKqgu4Zp33zzOvISP38Fg5FAWcgrF9iTuC3OKs8aBEI-cNWF3obNCSzTAB8Pww9gNIOy61vUbKHDC86V9Em0w__" class="img-fluid rounded mr-3 mb-3" style="width: 250px; height: 150px;">
+                <img src="https://s3-alpha-sig.figma.com/img/b791/a490/76b637b3463839823573a4699778d253?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lbI9O5NB9Jg3EWYBEdKo-ubb8-O9Ka3K-ibfUmHAz5cB4-gGKZhMuEPxFyh8cjeNHhmnusGjSYLxtSVS5Nfp8tIV5T04QIujcaP~betL--WF6mWVjsVJ6by--fULrAae72512jgk55zkYuhXATtW206-OzLr9iU5Pt6qBl~QOXu4QROAyKhOh65ZLdu-kwKzp7obORB-rGgl2WeovbdeEAVxCA3AACmgzq~eUIMgBAhZeRXmkyr1lJDplcIcVxq1lDK2K8ahqZsL0zgjfpvemVVxQ3~qPW~gJzU9zzPGM~SEVfNhBPBrRmOWCUsG8y9FafmoZ~-ERbNPljC5SIsYgQ__" class="img-fluid rounded mr-3 mb-3" style="width: 250px; height: 150px;">
+                <img src="https://s3-alpha-sig.figma.com/img/1810/9c8c/27147fc9069e5aaedca141cbd5e38fb5?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GWfF9uZrPvN~fIqs-itrhK7ndtF3n6n7mLj2pOizRrn9JAGBYHpTX5Q9lyc0YBAepLgU-8i5NFT-9~NmxddSkZKfOnDi5cA1AbuTj8IQsw5BqS9~4av~5QzsvizQC7wb81fvcMIAXIJlo0IfYbuTN51Gw-ybPM5dP088dfGkyPYFLUKj2Pg6g~7NSt5nyjR9VdHW1RG6LPTrwRALAeYzZe-Mlec5j3PMqf8zLVR35t2r4z513o5aDEX2eX2yt0jaAcNgyPprUcVtmgwm8vkrXt3TZhevr7kxt~tbhmpSu7DI45Y6DR-Du3XPMsv~PYsE9QGejzpzdK5aO-Plu7LANw__" class="img-fluid rounded mr-3 mb-3" style="width: 250px; height: 150px;">
+                <img src="https://s3-alpha-sig.figma.com/img/b6e6/2f5c/f7bdd68c0eb8ca0424ee5d0a2cd50047?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcgfiQfPnL4fnnMsDZySBS~LxBkCk3qCacC-f8SuXlvJIPDZ2CqoCjCLJXd0OAMHnl77Vo9X6Qn7G81HxVeIvPXijq2bWAnPUblDrhAw7cINtSN9HQ5nicnBj22oRdkOifb4TqC~nJl3P61arcmksv5Fv0IWBExUryfTUZIdLQf12eaQTyqXoZGB3AkPW-j1WFQjI7NaZpZNKzld9RYHDgyeJvjuoHyuGk~vS-WmWyBRMoDs1RLX6MXWHTwzVCpmXwydtFkXOvSU~iDoNg2G9YKSeibM-bQ-2O2eaBWCvGWT6eN3zAkZ2YXEMbJxKqY5jA~LW1v91pvZSTba3F5LbA__" class="img-fluid rounded mr-3 mb-3" style="width: 150px; height: 150px;">
+                <img src="https://s3-alpha-sig.figma.com/img/0484/1400/cae447fd034995078024fd4508542d72?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G8Z-4jM2T7q7w9fVWGV7VcHSSLpi9pK5GSKQyJwEg~xmGMM6Y~w5ux-BXdY9Io-WHTN~tlFYtUA5eFG89xTQ~SAP9~nejk6S6mBdax1bwiVEzGJhFROmwtGYRijFKbIyXkiE7FrjSzP~6j0xF4a2vyBrW2weAv~-KZGERaExDNebKq94EMp~-hbrLo1c3H26cDkkK3Y~QtE6QcTwa8diU2jNvlGZTyqZebiJvER7IuY8X7Dd6jlUH0vXXZhUuHOWR5B~4Sv2TxqyD0zNFoc7tQWM0zPXfPOLnQQ0ijjtRVoYp~ekdf-15wZ8uyWfO-2v2oZbD-1rhQDzm4sdm7-i2Q__" class="img-fluid rounded mr-3 mb-3" style="width: 260px; height: 150px;">
+                <img src="https://s3-alpha-sig.figma.com/img/0d1f/7fd5/c4c2ab1004f3dae4b260f6854e1d879c?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iNocsD0FHTHr0sDckMOWxEM8sQfxjR2xI7S7YrvASeCmARid5oG9t2oqNwTXyYPykSrD7PUUj5RIadpYPy4KH4-Su9VAoWNcVNlLoQf8fTt5MYkHXSDcPrgrYVYU0PjgmdcYV~zUMvgEzoYFaQ0m2CW0v4Mn8MOBg4am61VQ59AfvoFb0bUFt3i~WsRt60YYb6XSmQv0SJFOowqxzW2OMe0LzWP-1wJykg1VSg~ulz6PKXn4xe2gagADNexEaqYvT82IBYYBSCWzZUvhpBU11mJCnq1N~Nu5m7hOscIpvMxjgOXu5Sk8wpwDxmRuRnCGcjJourecxxt5WMXrTqz-8A__" class="img-fluid rounded mr-3 mb-3" style="width: 340px; height: 150px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-3 text-center">
+            <button id="b3" class="btn btn-primary" style="background-color: SlateBlue;">See All</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="class4 ml-5">
+                <h3 class="text-white">Lorem Ipsum</h3>
+                <p class="text-white">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="class5 ml-5">
+                <h3 class="text-white">Stay in the loop</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="d-inline-block text-white">
+                            Subscribe to receive the latest news and updates about TDA.<br>
+                            We promise not to spam you!
+                        </p>
+                        <form class="d-inline-block ml-5">
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger con" type="button">Continue</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container4">
+        <div class="footer">
+            <div class="heading"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6" id="flogo">
+                    <h4>Logo</h4>
+                    <p class="text-white"> Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.  </p>
+                    <p class="text-white"> @Logo </p>
+
+                </div>
+
+                <div class="col-md-2 col-sm-6">
+    <h4 class="text-white">About us</h4>
+    <p><a href="#" class="text-white">Zeux</a></p>
+    <p><a href="#" class="text-white">Portfolio</a></p>
+    <p><a href="#" class="text-white">Careers</a></p>
+    <p><a href="#" class="text-white">Contact us</a></p>
+</div>
+
+
+
+
+
+                <div class="col-md-3 col-sm-6" >
+                    <h4>Contact us</h4>
+                    <p class="text-white"> Lorem Ipsum is simply dummy text <br> of the  printing and typesetting <br> industry.  </p>
+                    <p class="text-white"> +908 89097 890 </p>
+
+                </div>
+
+
+
+
+                       <div class="iconKeeper">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="social-icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+            </div>
+            <footer class="fclass">
+                <hr>
+                <p>© 2022 Rojin All rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
